@@ -1,0 +1,101 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+:root {
+  --homePrimary: "#4262FF";
+  --Primary: '#050038';
+  --green: '#c3ff45'
+}
+
+::selection {
+  background: #c3ff45ad;
+  color: #181818;
+}
+
+.App {
+  overflow: hidden;
+  overflow-y: auto !important;
+  padding: 0px !important;
+  /* background: #040C0C; */
+}
+.main-right-side-section {
+  padding: 0px 30px 0px 280px;
+  transition-duration: 0.5s;
+}
+
+.main-right-side-section.active {
+  padding: 0px 30px 0px 30px;
+}
+
+.container {
+  width: 100% !important;
+  max-width: 1170px !important;
+  margin: 0px auto !important;
+}
+
+* , ::after , ::before{
+  box-sizing:border-box;
+}
+
+.top-strip-section {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding-left: 30px;
+} 
+
+.top-strip-section.active {
+  padding-left: 280px;
+}
+
+/* Responsive Section */
+
+@media only screen and (max-width: 1170px) {
+  .container {
+    max-width: 992px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    max-width: 768px !important;
+  }
+  .main-right-side-section {
+    padding: 0px 30px 0px 30px;
+    transition-duration: 0.5s;
+  }
+  .top-strip-section.de-active {
+    padding-left: 280px;
+  } 
+  
+  .top-strip-section.active {
+    padding-left: 30px;
+  }
+  .left-button-text-sec .button-sec {
+    transform: rotate(180deg);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 675px !important;
+  }
+
+}
+
+@media only screen and (max-width: 674px) {
+  .container {
+    max-width: 475px !important;
+  }
+}

@@ -1,0 +1,180 @@
+.AboutMe {}
+
+
+.about-me-head {
+    h1 {
+        span {
+            background: linear-gradient(to right, #e92015, #4f14da);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            animation: gradient 5s linear infinite;
+        }
+    }
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: right center;
+    }
+    50% {
+        background-position: left center;
+    }
+    100% {
+        background-position: right center;
+    }
+}
+
+.about-sec-1-button-2 {
+    .learn-ball-btns {
+        transform: translate(-50% , -50%) scale(0);
+    }
+    button:hover .learn-ball-btns {
+        transform: translate(-50% , -50%) scale(1);
+    }
+}
+
+.background-skiller {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.similar-skillblocks {
+    &:hover .background-skiller{
+      transform: rotate(-45deg);
+      transform-origin: bottom;
+    } 
+}
+
+
+.similar-skillblocks {
+    .title-skiller h2 {
+        background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        animation: gradient 5s linear infinite;
+    }
+}
+.inner-roller {
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background-size: 200% 100%;
+    animation: gradient 5s linear infinite;
+}
+
+.about-testimonial-heading , .top-get-intouch-head {
+    h2 {
+        span {
+            background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            animation: gradient 5s linear infinite;  
+        }
+    }
+}
+.about-sec-3-head-right , .about-pricing-section{
+    h2 {
+        background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        animation: gradient 5s linear infinite;
+    }
+}
+
+.experince-blocker {
+    h2 {
+        background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        animation: gradient 5s linear infinite;
+    }
+}
+  
+  @keyframes gradient {
+    0% {
+        background-position: right center;
+    }
+    50% {
+        background-position: left center;
+    }
+    100% {
+        background-position: right center;
+    }
+  }
+  
+
+  .bottom-about-3-download-cv {
+        .abs-down-baser {
+            transform: translate(-50% , 0%);
+        }
+        .download-cv-icon {
+            transform: translate(-50% , 0%);
+        }
+  }
+
+  .work-after-section {
+    transform: translate(-50% , -50%) scale(0) rotate(45deg);
+    transition-duration: 0.5s;
+    // button {
+    //     -webkit-backdrop-filter: blur(20px);
+    //     backdrop-filter: blur(20px);
+    // }
+  }
+  .similar-work-blks:hover .work-after-section{
+    transform: translate(-50% , -50%) scale(1) rotate(45deg);
+  }
+  
+
+.getintouch-greendot-anime::after {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 14px;
+    height: 14px;
+    content: "";
+    border-radius: 50px;
+    animation: circle-pulse 2s linear 0s infinite normal;
+}
+
+
+  @keyframes circle-pulse {
+    0% {
+      -webkit-transform:scale(0.95);
+      transform:scale(0.95);
+      -webkit-box-shadow:0 0 0 0 rgba(77,170,87,0.9);
+      box-shadow:0 0 0 0 rgba(96, 241, 111, 0.9)
+    }
+    50% {
+      -webkit-transform:scale(1);
+      transform:scale(1);
+      -webkit-box-shadow:0 0 0 8px rgba(77,170,87,0);
+      box-shadow:0 0 0 8px rgba(77,170,87,0)
+    }
+    100% {
+      -webkit-transform:scale(0.95);
+      transform:scale(0.95);
+      -webkit-box-shadow:0 0 0 0 rgba(77,170,87,0);
+      box-shadow:0 0 0 0 rgba(77,170,87,0)
+    }
+  }
+
+// Pulse Keyframe Animation
+
+
+
+// @keyframes myAnim {
+//     0% {
+//         box-shadow: 0 0 0 0px rgba(195, 240, 154, 0.2);
+//       }
+//       100% {
+//         box-shadow: 0 0 0 20px rgba(193, 250, 139, 0);
+//       }
+// }

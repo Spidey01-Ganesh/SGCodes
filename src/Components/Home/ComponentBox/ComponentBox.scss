@@ -1,0 +1,26 @@
+.ComponentBox {
+    .section-10-head {
+        h2 {
+            span {
+                background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% 100%;
+                animation: gradient 5s linear infinite;
+            }
+        }
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: right center;
+    }
+    50% {
+        background-position: left center;
+    }
+    100% {
+        background-position: right center;
+    }
+  }
